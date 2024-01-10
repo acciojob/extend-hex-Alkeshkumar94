@@ -1,6 +1,8 @@
 const extendHex = (shortHex) => {
   // write your code here
-	let i=shortHex.length-3,iscapital=false,output="#";
+	let i=shortHex.length-3,iscapital=false;
+	let output="#";
+	
 	while(i<shortHex.length){
 	let asciivalue=shortHex[i].chartAt(0);
 		if(asciivalue>=65 && asciivalue<=90)
@@ -10,7 +12,7 @@ const extendHex = (shortHex) => {
 		output+=shortHex[i]+shortHex[i];
 		i++;
 	}
-	return iscapital?output.toUpperCase():output;
+	return iscapital ? output.toUpperCase():output;
 	
 };
 
